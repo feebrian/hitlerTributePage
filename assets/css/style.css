@@ -81,3 +81,13 @@ header {
 .navbar .nav-link a {
   color: var(--font-color);
 }
+
+/* About */
+.bg-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../img/bg-img1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -3rem;
+}
