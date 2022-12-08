@@ -2,7 +2,8 @@
 
 /* Variable */
 :root {
-  --main-color: #101010;
+  --main-color: #f4a950;
+  --box-color: #161b21;
   --font-color: #fff;
 }
 
@@ -22,7 +23,11 @@
 body {
   font-family: "Staatliches";
   color: var(--font-color);
-  background: var(--main-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("../img/bg-img1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 section {
@@ -83,11 +88,32 @@ header {
 }
 
 /* About */
-.bg-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("../img/bg-img1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  margin-top: -3rem;
+.heading {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.about {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.about-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.title-text p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.title-text p .color,
+.sub-text p .color {
+  color: var(--main-color);
+}
+
+.sub-text p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
